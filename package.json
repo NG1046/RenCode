@@ -1,0 +1,44 @@
+{
+  "name": "rencode",
+  "version": "1.0.0",
+  "description": "Just A Code Editor For Renpy.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildDist": "electron-builder build"
+  },
+  "keywords": [],
+  "author": "EDGE Dev Interactive",
+  "license": "MIT",
+  "dependencies": {
+    "base32-crockford": "^0.0.6",
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "electron": "^13.1.5",
+    "electron-builder": "^22.11.7"
+  },
+
+  "build":{
+    "appId": "com.edgedevinteractive.project.rentools.rencode.app",
+    "productName": "RenCode",
+    "win": {
+      "target": "NSIS"
+    },
+    
+    "icon": "buildResx/icon.ico",
+    "directories": {
+      "output": "distBuilds"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+
+
+
+      "shortcutName": "RenCode",
+      "displayLanguageSelector": false
+    }
+  }
+}
