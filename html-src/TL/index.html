@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" />
+
+        <!-- UIs -->
+            <!-- Bootstrap CSS -->
+            <link href="../../UIs/bootstrap/5.0.2/css/bootstrap.css" rel="stylesheet">
+            <!-- Sweet Alert 2 -->
+            <script src="../../UIs/SweetAlert2.js"></script>
+
+        <!-- Others -->
+        <link rel="stylesheet"data-name="vs/editor/editor.main"href="../editor-files/package/min/vs/editor/editor.main.css"/>
+
+        <!-- RenCode Things -->
+        <link href="../css.css" rel="stylesheet">
+        <title>RenCode</title>
+    </head>
+    <body>
+        <div class="ctrlPanel d-flex bd-highlight" id="ElemSec1">
+            <div class="p-2 flex-fill bd-highlight CTRLButtonContainer">
+
+                <button type="button" class="btn btn-outline-primary CRTLButtonItems" id="SaveAsButton">I-save ang File</button>
+                
+                <button type="button" class="btn btn-outline-primary CRTLButtonItems" id="SaveToFileButton">Magtipid</button>
+
+                <button type="button" class="btn btn-outline-primary CRTLButtonItems" id="OpenFileButton">Buksan ang file</button>
+
+                
+                <button type="button" class="btn btn-outline-danger CRTLButtonItems" id="ClearEditor">I-clear ang Editor</button>
+
+            </div>
+            <div class="p-2 bd-highlight CTRLButtonContainer">
+
+                <div class="dropdown">
+                    
+                    <button class="btn btn-outline-primary dropdown-toggle CRTLButtonItems" type="button" id="Misc1ENCDEC" data-bs-toggle="dropdown" aria-expanded="false" title="Hindi file-lock">
+                        Crypto
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="Misc1ENCDEC">
+                        <li><button class="dropdown-item" id="Misc1ENCDEC_Enc" >I-encrypt ang File</button></li>
+                        <li><button class="dropdown-item" id="Misc1ENCDEC_Dec" >I-decrypt ang File</button></li>
+                    </ul>
+                </div>
+                
+                <div class="dropdown">
+                    <button class="btn btn-outline-primary dropdown-toggle CRTLButtonItems" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Useful Links
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" onclick="processStartURL('http://lemmasoft.renai.us/')" >LemmaSoft Forum</a></li>
+                        <li><a class="dropdown-item" onclick="processStartURL('https://discord.com/invite/6ckxWYm')" >Renpy Discord</a></li>
+                        <li><a class="dropdown-item" onclick="processStartURL('https://www.renpy.org/doc/html/index.html')" >Renpy's documentation</a></li> 
+                        <li><a class="dropdown-item" onclick="processStartURL('https://discord.com/invite/QY3hABSgvM')" >Zeil Learnings Discord</a></li> 
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div id="ElemSec2">
+            <p class="filePath" id="filePath">C:/ HI</p>
+        </div>
+        
+        <div id="EditorContainer"></div>
+        
+        <div class="LastActionBar">
+            <div>
+                <img class="LastActionBarItem" id="LastActionImg" src="">
+            </div>
+            <div>
+                <p class="LastActionBarItem" id="LastActionText"> 
+                    
+                </p>    
+
+            </div>   
+        </div>
+
+        <script src="./dialog.js"></script>
+
+        <script src="./Misc 1.js"></script>
+
+        <script src="../Misc 1/Cryptography.js"></script>
+
+        <script src="./dommer.js"></script>
+
+        <!--script>
+            
+
+
+        </script-->
+
+
+        
+        <script src="../../UIs/bootstrap/5.0.2/js/bootstrap.bundle.js"></script>
+
+        
+
+        <script>
+            // var require = { paths: { vs: './editor-files/package/min/vs' } };
+        </script>
+        <script src="../editor-files/package/min/vs/loader.js"></script>
+        <script src="../editor-files/package/min/vs/editor/editor.main.nls.js"></script>
+        <script src="../editor-files/package/min/vs/editor/editor.main.js"></script>
+        <!--     Language Files     -->
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Renpy.Language.NoSnippets.js"></script> <!-- No Snip -->
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Renpy.Language.js"></script> <!-- Comp and Snip -->
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Renpy.Language.NoCompletion.js"></script> <!-- No Comp -->
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Renpy.Language.Configuration.js"></script> <!-- Conf -->
+        <!--     Themes     -->
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Theme/Renpy.Theme.vs.js"></script>
+        <script src="../editor-files/JavaScripts/Renpy Language Files/Theme/Renpy.Theme.vs-dark.js"></script>
+        <!--     Themes (Spacial)     -->
+        <script src="../editor-files/JavaScripts 2/Theme/Renpy.Theme.lps-navy-blue.js"></script>
+        <script src="../editor-files/JavaScripts 2/Theme/Renpy.Theme.lps-blue.js"></script>
+        
+        <script src="./mnc.js"></script>
+        <script src="./lastAction.js"></script>
+        <script src="../Handlers_1.js"></script>
+
+  </body>
+</html>
