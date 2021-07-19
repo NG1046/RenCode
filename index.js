@@ -28,5 +28,5 @@ function createWindows(){
     //win.loadFile(__dirname+"/html-src/TL/index.html"); // Filipino
     win.loadFile(__dirname+"/html-src/EN/index.html"); // English
 
-    win.removeMenu(); // Debug Use Only
+    win.removeMenu(); // Uncomment When Publish
 }
