@@ -7,4 +7,4 @@ Todo:
  - [ ] Add/Improve "Quick Document"
  - [ ] Improve "Tagalog(Philippines) Translation"
  - [ ] Improve "UI"
- - [ ] Replace "Language File" With "Language Server"
+ - [ ] Add "Language Server"
